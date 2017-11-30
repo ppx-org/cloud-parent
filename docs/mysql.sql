@@ -6,7 +6,7 @@ CREATE TABLE merchant_account (
   MERCHANT_ID int(11) NOT NULL,
   LOGIN_ACCOUNT varchar(32) NOT NULL,
   LOGIN_PASSWORD varchar(32) NOT NULL,
-  RECORD_STATUS smallint(6) NOT NULL DEFAULT '1',
+  RECORD_STATUS tinyint(1) NOT NULL DEFAULT '1',
   CREATED timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (ACCOUNT_ID)
 );
@@ -15,7 +15,7 @@ CREATE TABLE merchant_account (
 CREATE TABLE merchant (
   MERCHANT_ID int(11) NOT NULL auto_increment,
   MERCHANT_NAME varchar(32) NOT NULL,
-  RECORD_STATUS smallint(6) NOT NULL DEFAULT '1',
+  RECORD_STATUS tinyint(1) NOT NULL DEFAULT '1',
   CREATED timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (MERCHANT_ID)
 );
@@ -33,7 +33,7 @@ CREATE TABLE test (
   TEST_DATE date DEFAULT NULL,
   PRIMARY KEY (TEST_ID)
 );
-create unique index idx_tesname on test(TEST_NAME);
+create unique index idx_test_name on test(TEST_NAME);
 
 
 
