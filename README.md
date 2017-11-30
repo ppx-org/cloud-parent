@@ -1,5 +1,7 @@
 框架技术spring cloud(Finchley.M2) + mysql + mongodb + redis
 
+* [开发文档](https://github.com/ppx-org/cloud-parent/blob/master/docs/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3.md)
+
 # 一般应用框架存在的问题
 * 缺少监控，系统性能无法评估，问题不能快速找到原因；缺少警告,有警告可在开发时就发现问题
 * 缺少安全性，除了造成风险，还可能造成项目无法验收
