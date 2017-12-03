@@ -13,7 +13,7 @@ CREATE TABLE merchant_account (
 
 /** MERCHANT_ID继承merchant_account.ACCOUNT_ID */
 CREATE TABLE merchant (
-  MERCHANT_ID int(11) NOT NULL auto_increment,
+  MERCHANT_ID int(11) NOT NULL,
   MERCHANT_NAME varchar(32) NOT NULL,
   RECORD_STATUS tinyint(1) NOT NULL DEFAULT '1',
   CREATED timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -69,6 +69,22 @@ insert into test_user_in_role(USER_ID, ROLE_ID) values(2, 1);
 
 
 
+/**************** 电商  ****************/
+
+/*==============================================================*/
+/* Table: category                                              */
+/*==============================================================*/
+create table category
+(
+   CAT_ID               int not null,
+   MERCHANT_ID          int not null,
+   PARENT_ID            int not null,
+   CAT_NAME             varchar(32) not null,
+   CAT_PRIO             int not null,
+   CREATED              timestamp not null default CURRENT_TIMESTAMP,
+   RECORD_STATUS        smallint not null default 1,
+   primary key (CAT_ID)
+);
 
 
 
