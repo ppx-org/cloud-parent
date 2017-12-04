@@ -76,7 +76,7 @@ insert into test_user_in_role(USER_ID, ROLE_ID) values(2, 1);
 /*==============================================================*/
 create table category
 (
-   CAT_ID               int not null,
+   CAT_ID               int not null auto_increment,
    MERCHANT_ID          int not null,
    PARENT_ID            int not null,
    CAT_NAME             varchar(32) not null,
