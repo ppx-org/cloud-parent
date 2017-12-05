@@ -86,6 +86,37 @@ create table category
    primary key (CAT_ID)
 );
 
+create table repository
+(
+   REPO_ID              int not null auto_increment,
+   MERCHANT_ID          int not null,
+   REPO_NAME            varchar(32) not null,
+   REPO_ADDRESS         varchar(128) not null,
+   CREATED              timestamp not null default CURRENT_TIMESTAMP,
+   RECORD_STATUS        smallint not null default 1,
+   primary key (REPO_ID)
+);
+
+create table store
+(
+   STORE_ID             int not null,
+   STORE_NAME           varchar(32) not null,
+   STORE_NO             varchar(32) not null,
+   CREATED              timestamp not null default CURRENT_TIMESTAMP,
+   RECORD_STATUS        smallint not null default 1,
+   primary key (STORE_ID)
+);
+
+/*==============================================================*/
+/* Table: store_map_repo                                        */
+/*==============================================================*/
+create table store_map_repo
+(
+   REPO_ID              int not null,
+   STORE_ID             int not null,
+   primary key (REPO_ID, STORE_ID)
+);
+
 
 
 
