@@ -118,6 +118,37 @@ create table store_map_repo
 );
 
 
+/**********          release         **********/
+/*==============================================================*/
+/* Table: sku                                                   */
+/*==============================================================*/
+create table sku
+(
+   SKU_ID               int not null,
+   PROD_ID              int not null,
+   STOCK_NUM            numeric(3,0) not null,
+   SKU_PRIO             int not null,
+   PRICE                decimal(7,2) not null,
+   primary key (SKU_ID)
+);
+
+create table product
+(
+   PROD_ID              int not null,
+   CAT_ID               int not null,
+   REPO_ID              int not null,
+   PROD_TITLE           varchar(32),
+   primary key (PROD_ID)
+);
+
+create table sku_img
+(
+   SKU_IMG_ID           int not null,
+   SKU_ID               int not null,
+   SKU_IMG_PRIO         int not null,
+   SKU_IMG_SRC          varchar(128) not null,
+   primary key (SKU_IMG_ID)
+);
 
 
 
