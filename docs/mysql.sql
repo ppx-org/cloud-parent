@@ -100,6 +100,7 @@ create table repository
 create table store
 (
    STORE_ID             int not null,
+   MERCHANT_ID          int not null,
    STORE_NAME           varchar(32) not null,
    STORE_NO             varchar(32) not null,
    CREATED              timestamp not null default CURRENT_TIMESTAMP,
