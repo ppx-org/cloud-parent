@@ -125,11 +125,12 @@ create table store_map_repo
 /*==============================================================*/
 create table sku
 (
-   SKU_ID               int not null,
+   SKU_ID               int not null auto_increment,
    PROD_ID              int not null,
    STOCK_NUM            numeric(3,0) not null,
    SKU_PRIO             int not null,
    PRICE                decimal(7,2) not null,
+   SKU_NAME				varchar(32),
    primary key (SKU_ID)
 );
 
@@ -144,7 +145,7 @@ create table product
 
 create table sku_img
 (
-   SKU_IMG_ID           int not null,
+   SKU_IMG_ID           int not null auto_increment,
    SKU_ID               int not null,
    SKU_IMG_PRIO         int not null,
    SKU_IMG_SRC          varchar(128) not null,
