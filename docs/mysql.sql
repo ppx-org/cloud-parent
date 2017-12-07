@@ -119,7 +119,77 @@ create table store_map_repo
 );
 
 
-/**********          release         **********/
+
+
+
+
+
+/*==============================================================*/
+/* Table: brand                                                 */
+/*==============================================================*/
+create table brand
+(
+   BRAND_ID             int not null auto_increment,
+   MERCHANT_ID          int not null,
+   BRAND_NAME           varchar(32) not null,
+   BRAND_PRIO           int not null,
+   CREATED              timestamp not null default CURRENT_TIMESTAMP,
+   RECORD_STATUS        smallint not null default 1,
+   primary key (BRAND_ID)
+);
+
+/*==============================================================*/
+/* Table: subject                                               */
+/*==============================================================*/
+create table subject
+(
+   SUBJECT_ID           int not null auto_increment,
+   MERCHANT_ID          int,
+   SUBJECT_NAME         varchar(32) not null,
+   SUBJECT_PRIO         int not null,
+   CREATED              timestamp not null default CURRENT_TIMESTAMP,
+   RECORD_STATUS        smallint not null default 1,
+   primary key (SUBJECT_ID)
+);
+
+
+/*==============================================================*/
+/* Table: subject_map_prod                                      */
+/*==============================================================*/
+create table subject_map_prod
+(
+   PROD_ID              int not null,
+   SUBJECT_ID           int not null,
+   primary key (PROD_ID, SUBJECT_ID)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************          release      ****************************/
 /*==============================================================*/
 /* Table: sku                                                   */
 /*==============================================================*/
