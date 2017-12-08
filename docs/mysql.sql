@@ -122,8 +122,6 @@ create table store_map_repo
 
 
 
-
-
 /*==============================================================*/
 /* Table: brand                                                 */
 /*==============================================================*/
@@ -138,6 +136,33 @@ create table brand
    primary key (BRAND_ID)
 );
 
+
+/*==============================================================*/
+/* Table: topic                                               */
+/*==============================================================*/
+create table topic
+(
+   TOPIC_ID           int not null auto_increment,
+   MERCHANT_ID        int,
+   TOPIC_NAME         varchar(32) not null,
+   TOPIC_PRIO         int not null,
+   CREATED            timestamp not null default CURRENT_TIMESTAMP,
+   RECORD_STATUS      smallint not null default 1,
+   primary key (TOPIC_ID)
+);
+
+
+/*==============================================================*/
+/* Table: subject_map_prod                                      */
+/*==============================================================*/
+create table topic_map_prod
+(
+   PROD_ID              int not null,
+   TOPIC_ID           int not null,
+   primary key (PROD_ID, SUBJECT_ID)
+);
+
+
 /*==============================================================*/
 /* Table: subject                                               */
 /*==============================================================*/
@@ -151,18 +176,6 @@ create table subject
    RECORD_STATUS        smallint not null default 1,
    primary key (SUBJECT_ID)
 );
-
-
-/*==============================================================*/
-/* Table: subject_map_prod                                      */
-/*==============================================================*/
-create table subject_map_prod
-(
-   PROD_ID              int not null,
-   SUBJECT_ID           int not null,
-   primary key (PROD_ID, SUBJECT_ID)
-);
-
 
 
 
