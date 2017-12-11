@@ -79,15 +79,17 @@ create table program_special
 
 
 /*==============================================================*/
-/* Table: program_dependent                                     */
+/* Table: program_dependence                                    */
 /*==============================================================*/
 create table program_dependence
 (
    PROG_ID              int not null,
    PROD_ID              int not null,
-   DEPENDENT_PRICE      decimal(7,2) not null,
-   primary key (PROG_ID, PROD_ID)
+   DEPEND_RPOD_ID       int not null,
+   DEPEND_PRICE         decimal(7,2) not null,
+   primary key (PROD_ID, PROG_ID)
 );
+
 
 
 
