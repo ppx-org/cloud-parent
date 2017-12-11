@@ -1,4 +1,4 @@
-框架技术spring cloud(Finchley.M2) + mysql + mongodb + redis
+框架X2技术spring cloud(Finchley.M2) + mysql + mongodb + redis
 
 * [开发文档](https://github.com/ppx-org/cloud-parent/blob/master/docs/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3.md)
 
