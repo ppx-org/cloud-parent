@@ -2111,7 +2111,7 @@ DESTINATION 0 新宋体,8,N</a:FontList>
 <a:CreationDate>1512609414</a:CreationDate>
 <a:ModificationDate>1512726386</a:ModificationDate>
 <a:CenterTextOffset>(-660, -13)</a:CenterTextOffset>
-<a:Rect>((-38620,3866), (-18283,24150))</a:Rect>
+<a:Rect>((-38620,3854), (-18283,24150))</a:Rect>
 <a:ListOfPoints>((-38220,4859),(-21193,4859),(-21193,23750))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>4371</a:ArrowStyle>
@@ -2200,7 +2200,7 @@ DESTINATION 0 新宋体,8,N</a:FontList>
 <a:CreationDate>1512726318</a:CreationDate>
 <a:ModificationDate>1512726404</a:ModificationDate>
 <a:CenterTextOffset>(-1380, -10)</a:CenterTextOffset>
-<a:Rect>((-32080,11369), (-21264,21670))</a:Rect>
+<a:Rect>((-32080,11357), (-21264,21670))</a:Rect>
 <a:ListOfPoints>((-31680,12359),(-22614,12359),(-22614,20913))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>4371</a:ArrowStyle>
@@ -3177,7 +3177,7 @@ select t.PROD_ID from (select PROD_ID from  program_index where RROG_ID = ? and 
 <o:RelationshipSymbol Id="o105">
 <a:CreationDate>1512708138</a:CreationDate>
 <a:ModificationDate>1512915553</a:ModificationDate>
-<a:Rect>((21120,44913), (33822,49269))</a:Rect>
+<a:Rect>((21120,44913), (33912,49303))</a:Rect>
 <a:ListOfPoints>((21782,47448),(21782,48853),(31722,48853),(31722,46113),(26375,46113))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>4371</a:ArrowStyle>
@@ -3243,7 +3243,7 @@ SOURCE 0 新宋体,8,N</a:FontList>
 <o:AssociationLinkSymbol Id="o113">
 <a:CreationDate>1512708642</a:CreationDate>
 <a:ModificationDate>1512915560</a:ModificationDate>
-<a:Rect>((906,39557), (17371,40941))</a:Rect>
+<a:Rect>((906,39638), (17371,40941))</a:Rect>
 <a:ListOfPoints>((16971,40541),(1306,40541))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
@@ -3285,7 +3285,7 @@ SOURCE 0 新宋体,8,N</a:FontList>
 <o:AssociationLinkSymbol Id="o119">
 <a:CreationDate>1512726624</a:CreationDate>
 <a:ModificationDate>1512915562</a:ModificationDate>
-<a:Rect>((2013,34498), (19935,35946))</a:Rect>
+<a:Rect>((2013,34638), (19935,35946))</a:Rect>
 <a:ListOfPoints>((19535,35546),(13192,35546),(13192,35538),(2413,35538))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
@@ -3307,7 +3307,7 @@ SOURCE 0 新宋体,8,N</a:FontList>
 <o:AssociationLinkSymbol Id="o123">
 <a:CreationDate>1512726625</a:CreationDate>
 <a:ModificationDate>1512915562</a:ModificationDate>
-<a:Rect>((-11908,35122), (-4245,36283))</a:Rect>
+<a:Rect>((-11908,35122), (-4245,36413))</a:Rect>
 <a:ListOfPoints>((-11508,35522),(-4645,35522))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
@@ -3371,7 +3371,7 @@ SOURCE 0 新宋体,8,N</a:FontList>
 <o:AssociationLinkSymbol Id="o131">
 <a:CreationDate>1512747385</a:CreationDate>
 <a:ModificationDate>1512953989</a:ModificationDate>
-<a:Rect>((2879,13139), (23012,19729))</a:Rect>
+<a:Rect>((2879,13359), (23012,19729))</a:Rect>
 <a:ListOfPoints>((22612,14301),(13192,14301),(13192,19329),(3279,19329))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
@@ -3431,7 +3431,7 @@ SOURCE 0 新宋体,8,N</a:FontList>
 <o:AssociationLinkSymbol Id="o137">
 <a:CreationDate>1512915673</a:CreationDate>
 <a:ModificationDate>1512915692</a:ModificationDate>
-<a:Rect>((-11908,30347), (-3890,31463))</a:Rect>
+<a:Rect>((-11908,30347), (-3890,31633))</a:Rect>
 <a:ListOfPoints>((-11508,30747),(-4290,30747))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
@@ -3489,7 +3489,7 @@ SOURCE 0 新宋体,8,N</a:FontList>
 <o:AssociationLinkSymbol Id="o144">
 <a:CreationDate>1512966600</a:CreationDate>
 <a:ModificationDate>1512966600</a:ModificationDate>
-<a:Rect>((-14951,8910), (24966,11708))</a:Rect>
+<a:Rect>((-14951,9166), (24966,11708))</a:Rect>
 <a:ListOfPoints>((23196,11308),(23196,10167),(-14551,10167))</a:ListOfPoints>
 <a:CornerStyle>1</a:CornerStyle>
 <a:ArrowStyle>0</a:ArrowStyle>
