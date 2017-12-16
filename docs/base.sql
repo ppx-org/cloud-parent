@@ -3,7 +3,7 @@
 create table import_data
 (
    MERCHANT_ID   int(11) NOT NULL,
-   ID            int(11) NOT NULL,
+   ROWNUM        int(11) NOT NULL,
    RESULT        int(11) NOT NULL,
    INT_1		 int,
    INT_2         int,
