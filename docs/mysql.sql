@@ -159,27 +159,8 @@ create table topic_map_prod
 (
    PROD_ID              int not null,
    TOPIC_ID           int not null,
-   primary key (PROD_ID, SUBJECT_ID)
+   primary key (PROD_ID, TOPIC_ID)
 );
-
-
-/*==============================================================*/
-/* Table: subject                                               */
-/*==============================================================*/
-create table subject
-(
-   SUBJECT_ID           int not null auto_increment,
-   MERCHANT_ID          int,
-   SUBJECT_NAME         varchar(32) not null,
-   SUBJECT_PRIO         int not null,
-   CREATED              timestamp not null default CURRENT_TIMESTAMP,
-   RECORD_STATUS        smallint not null default 1,
-   primary key (SUBJECT_ID)
-);
-
-
-
-
 
 
 
@@ -220,6 +201,7 @@ create table sku
 create table product
 (
    PROD_ID              int not null,
+   MERCHANT_ID          int not null,
    CAT_ID               int not null,
    REPO_ID              int not null,
    PROD_TITLE           varchar(32),

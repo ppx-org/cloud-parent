@@ -1,5 +1,15 @@
 
+/******************* search ****************/
+create table search_words
+(
+	PROD_ID		int(11) NOT NULL,
+	MERCHANT_ID int(11) NOT NULL,
+	WORDS 	varchar(256) NOT NULL,
+	primary key (PROD_ID)
+)
 
+
+/******************* import ****************/
 create table import_data
 (
    MERCHANT_ID   int(11) NOT NULL,
@@ -13,3 +23,6 @@ create table import_data
    CHAR_2		 varchar(32),
    primary key (MERCHANT_ID, ID)
 );
+
+
+
