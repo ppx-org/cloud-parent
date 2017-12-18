@@ -24,7 +24,6 @@ create table program_category
 (
    PROG_ID              int not null,
    CAT_ID               int not null,
-   CAT_POLICY           varchar(32) not null,
    primary key (PROG_ID, CAT_ID)
 );
 
@@ -35,7 +34,6 @@ create table program_brand
 (
    PROG_ID              int not null,
    BRAND_ID             int not null,
-   BRAND_POLICY         varchar(32) not null,
    primary key (PROG_ID, BRAND_ID)
 );
 
