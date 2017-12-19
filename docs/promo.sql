@@ -87,20 +87,20 @@ create table program_dependence
 
 create table program_index
 (
-   MERCHANT_ID 			int not null,
    PROD_ID              int not null,
    PROG_ID              int not null,
+   MERCHANT_ID 			int not null,
    INDEX_BEGIN          date not null,
    INDEX_END            date not null,
    INDEX_PRIO           int not null,
-   INDEX_POLICY         varchar(32),
+   INDEX_POLICY         varchar(32) not null,
    INDEX_GROUP          varchar(32),
+   CAT_ID 				int,
+   BRAND_ID 			int,
    primary key (MERCHANT_ID, PROD_ID, PROG_ID)
 );
-
-
-
-
+create index idx_program_index_prog on program_index(PROG_ID);
+create index idx_program_index_merchant on program_index(MERCHANT_ID);
 
 
 

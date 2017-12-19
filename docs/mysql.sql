@@ -138,28 +138,28 @@ create table brand
 
 
 /*==============================================================*/
-/* Table: topic                                               */
+/* Table: theme                                               */
 /*==============================================================*/
-create table topic
+create table theme
 (
-   TOPIC_ID           int not null auto_increment,
+   THEME_ID           int not null auto_increment,
    MERCHANT_ID        int,
-   TOPIC_NAME         varchar(32) not null,
-   TOPIC_PRIO         int not null,
+   THEME_NAME         varchar(32) not null,
+   THEME_PRIO         int not null,
    CREATED            timestamp not null default CURRENT_TIMESTAMP,
    RECORD_STATUS      smallint not null default 1,
-   primary key (TOPIC_ID)
+   primary key (THEME_ID)
 );
 
 
 /*==============================================================*/
-/* Table: subject_map_prod                                      */
+/* Table: theme_map_prod                                      */
 /*==============================================================*/
-create table topic_map_prod
+create table theme_map_prod
 (
-   PROD_ID              int not null,
-   TOPIC_ID           int not null,
-   primary key (PROD_ID, TOPIC_ID)
+   THEME_ID			int not null,
+   PROD_ID			int not null,
+   primary key (THEME_ID, PROD_ID)
 );
 
 

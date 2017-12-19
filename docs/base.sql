@@ -21,7 +21,7 @@ create table import_data
    NUM_2         decimal(7,2),
    CHAR_1		 varchar(32),
    CHAR_2		 varchar(32),
-   primary key (MERCHANT_ID, ID)
+   primary key (MERCHANT_ID, ROWNUM)
 );
 
 
