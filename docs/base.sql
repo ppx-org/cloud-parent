@@ -1,12 +1,28 @@
 
 /******************* search ****************/
+create table search_ext_word
+(
+	MERCHANT_ID int(11) NOT NULL,
+	EXT_WORD 	varchar(32) NOT NULL,
+	primary key (MERCHANT_ID, EXT_WORD)
+)
+
 create table search_words
 (
 	PROD_ID		int(11) NOT NULL,
 	MERCHANT_ID int(11) NOT NULL,
-	WORDS 	varchar(256) NOT NULL,
+	WORDS 		varchar(256) NOT NULL,
 	primary key (PROD_ID)
 )
+
+
+
+
+
+
+
+
+
 
 
 /******************* import ****************/
