@@ -101,6 +101,7 @@ create table program_index
 );
 create index idx_program_index_prog on program_index(PROG_ID);
 create index idx_program_index_merchant on program_index(MERCHANT_ID);
+create index idx_program_index_date on program_index(PROD_ID, INDEX_BEGIN, INDEX_END);
 
 
 
