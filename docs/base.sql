@@ -15,6 +15,33 @@ create table search_words
 	primary key (PROD_ID)
 )
 
+create table search_version
+(
+	MERCHANT_ID 	int(11) NOT NULL,
+	VERSION_NAME 	varchar(32) NOT NULL,
+	CREATE_BEGIN 	datetime,
+	CREATE_END		datetime,
+	VERSION_STATUS  tinyint(1) NOT NULL DEFAULT 1,
+	CREATE_INFO		varchar(128),
+	primary key (MERCHANT_ID, VERSION_NAME)
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
