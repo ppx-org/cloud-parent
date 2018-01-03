@@ -223,3 +223,73 @@ create table sku_img
 
 
 
+
+/*==============================================================*/
+/* Table: "user_order"                                               */
+/*==============================================================*/
+create table user_order
+(
+   ORDER_ID             int not null,
+   USER_ID              int not null,
+   STORE_ID             int,
+   ORDER_TIME           timestamp not null,
+   ORDER_STATUS         smallint not null,
+   ORDER_PRICE          decimal(7,2) not null,
+   PAY_PRICE            decimal(7,2) not null,
+   primary key (ORDER_ID)
+);
+
+
+/*==============================================================*/
+/* Table: order_item                                            */
+/*==============================================================*/
+create table order_item
+(
+   ITEM_ID              int not null auto_increment,
+   ORDER_ID             int not null,
+   SKU_ID               int not null,
+   PROD_ID				int not null,
+   ITEM_UNIT_PRICE      decimal(7,2) not null,
+   ITEM_PRICE           decimal(7,2) not null,
+   ITEM_NUM             int not null,
+   ITEM_TITLE           varchar(32) not null,
+   ITEM_SKU             varchar(32),
+   ITEM_IMG             varchar(128),
+   ITEM_PROMO           varchar(32),
+   primary key (ITEM_ID)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
