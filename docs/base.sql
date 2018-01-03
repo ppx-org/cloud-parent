@@ -5,7 +5,7 @@ create table search_ext_word
 	MERCHANT_ID int(11) NOT NULL,
 	EXT_WORD 	varchar(32) NOT NULL,
 	primary key (MERCHANT_ID, EXT_WORD)
-)
+);
 
 create table search_words
 (
@@ -13,7 +13,7 @@ create table search_words
 	MERCHANT_ID int(11) NOT NULL,
 	WORDS 		varchar(256) NOT NULL,
 	primary key (PROD_ID)
-)
+);
 
 create table search_version
 (
@@ -25,7 +25,7 @@ create table search_version
 	CREATE_INFO		varchar(1024),
 	UPDATED 		datetime,
 	primary key (MERCHANT_ID, VERSION_NAME)
-)
+);
 
 
 
