@@ -1,0 +1,14 @@
+﻿wx.getSystemInfo({
+  success: function(res) {
+    console.log(res.model)
+    console.log(res.pixelRatio)
+    console.log(res.windowWidth)
+    console.log(res.windowHeight)
+    console.log(res.language)
+    console.log(res.version)
+  }
+})
+
+model手机型号 pixelRatio设备像素比
+windowWidth 窗口宽度 windowHeight容器高度
+language微信设置的语言 version微信版本号

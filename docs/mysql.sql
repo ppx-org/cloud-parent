@@ -265,6 +265,13 @@ create table order_item
 
 
 
+create table repo_map_cat
+(
+   REPO_ID			int not null,
+   CAT_ID			int not null,
+   primary key (REPO_ID, CAT_ID)
+);
+
 
 
 

@@ -1,0 +1,67 @@
+﻿wx.login 返回：{"errMsg":"login:ok","code":"003fweG626Oj3M0tDXG62iCvG62fweGf"}
+
+
+{"errMsg":"getUserInfo:ok","rawData":"{\"nickName\":\"邓向忠\",\"gender\":1,
+\"language\":\"zh_CN\",\"city\":\"Guangzhou\",\"province\":\"Guangdong\",
+\"country\":\"CN\",
+\"avatarUrl\":\"http://wx.qlogo.cn/mmopen/vi_32/ibNDrkWMSNQhrhhcgzmvoMDk1K54bB3FMicxAeR2mSygxt13aibhX63l2cx7unYzicNd4OYsjzCDg0h9feEKNuO8hQ/0\"}",
+"userInfo":{"nickName":"邓向忠","gender":1,"language":"zh_CN","city":"Guangzhou","province":"Guangdong","country":"CN",
+"avatarUrl":"http://wx.qlogo.cn/mmopen/vi_32/ibNDrkWMSNQhrhhcgzmvoMDk1K54bB3FMicxAeR2mSygxt13aibhX63l2cx7unYzicNd4OYsjzCDg0h9feEKNuO8hQ/0"},
+"signature":"eaf8c76dfa1c36b22f81014de0c2f9422e05325d",
+"encryptedData":"VTCRZIO+hDDraeoIyffAV4mGCHjA2wrLPF04ClTO0huQuY+2v2XuX8vXAABr05kEQ5geIw0wREYCj6DEqUyH4RXbXSXShCvtXpzEEZJ2BwIuho5LNhH8AVKo6bmNb9Awr/TmaDga6ZN5RP8Z1iL/tCdseRrA3EIks2i4V5DNsFUkB7nQjIyGpFW7levzbfEIBhd5Eilj6ddadbctU+Itg0W0g68JhvZwa3pmpfMwVlq8vhBtzLpaNOYTpCiPgXYuhRbwxUogmyjU74Ml9weI9vyhbEOsZSPiNNLh0Ba8f9iuwhxeP7tyWneNvypIKQTwHGD+4Y7tfWQHO+0zx5aoaGyQg1tt7zru9CESjeFIniYz+EByQ1ij+ly+awFUm9RvkgPYyFgwvXaB+UV2OHfiYBhFIo+FpnBwTDwuB+lEtB/klDSy9kYoYuQLb4BHzjVH8valzc2PqJC+xGNEq+b1QsRwm96iUW8VjbZl2AXZytg=",
+"iv":"b/0Ad6AGWr2JOe2a1RSYJw=="}
+
+https://api.weixin.qq.com/sns/jscode2session?appid=wxe2d27ee638a5cb7a&secret=cb27bdc24c0e67b01ad15b741e377f82&js_code=013tMh5h0dxhXz1Qgx4h08gg5h0tMh5g&grant_type=authorization_code
+
+{"session_key":"3x761+gkCcydO\/GxueoZ6w==","expires_in":7200,"openid":"oD1n60HZHWBa6ucWSdY50HNWPfq4"}
+{"session_key":"TAncqMDRThNZqeEsmb3xrQ==","expires_in":7200,"openid":"oD1n60HZHWBa6ucWSdY50HNWPfq4"}
+
+
+每个请求都带有一个session_key,多台机
+session_key 找到用户的openid
+
+session_key openid
+
+
+
+{"errMsg":"login:ok","code":"013FBGic2Hu5LB0h5thc2acBic2FBGij"}
+{"errMsg":"login:ok","code":"013mIusW1DYWjW0x1xrW1qj8sW1mIus3"}
+
+
+
+
+
+
+
+但是，为了安全方面的原因，请不要直接使用这些信息作为你小程序的用户标识和session标识回传到小程序客户端中去，
+我们应该在服务器端做一层自己的session，
+将这个微信账号登录态生成一个session id并维护在我们自己的session机制中，
+然后把这个session id派发到小程序客户端作为session标识来使用。
+
+关于如何在服务器端做这个session机制，我们现在一般采用键值对存储工具来做，
+比如redis。我们为每个session生成一个唯一的字符串作为键，
+然后可以将session_key和openid作为值，存入redis中，为了安全，存入的时候还应设置一个超时的时间。
+
+小程序有本地的storage，所以我们可以使用storage来保存Session ID，以供后续的后台API调用所使用。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

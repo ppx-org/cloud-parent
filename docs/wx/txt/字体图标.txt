@@ -1,0 +1,24 @@
+﻿1.用ttf格式的文件
+2.http://transfonter.org/点击Add fonts，加载ttf
+3.选择下边base64 encode改off为on
+4.点击Convert按键
+5.转换后点击download下载
+6.找到stylesheet.css文件,复制内容到index.wxss
+
+应用
+index.wxss
+@font-face {
+	font-family: 'iconfont';
+	src: url(data:application/font-wof
+.fa {
+font-family: "iconfont" !important;
+font-size: 16px;
+}
+.icon-gouwuche:before { content: "\343f"; }
+.icon-sousuo_sousuo:before { content: "\e60b"; }
+
+index.wxml
+<view class="fa icon-sousuo_sousuo" style="font-size:38px"></view>
+
+
+

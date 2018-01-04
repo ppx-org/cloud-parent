@@ -1,0 +1,14 @@
+iphone7 1334x750
+
+移动端字体大小单位rem(font size of the root element)
+
+长度用vw vh vmax vmin
+
+
+rem是一种相对单位，相对于本页面的根字体大小而设置；通常用法：
+
+html{
+  font-size:62.5%;
+}
+
+设置跟字体为62.5%即网页的默认字体一般为16px，这样设置可以令1rem == 10px方便计算；
