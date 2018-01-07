@@ -27,6 +27,34 @@ create table search_version
 	primary key (MERCHANT_ID, VERSION_NAME)
 );
 
+create table search_hot_word
+(
+	HOT_ID		int(11) NOT NULL auto_increment,
+	STORE_ID 	int(11) NOT NULL,
+	HOT_WORD 	varchar(32) NOT NULL,
+	HOT_PRIO	int not null,
+	CREATED     timestamp not null default CURRENT_TIMESTAMP,
+	primary key (HOT_ID)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
