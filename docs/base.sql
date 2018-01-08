@@ -57,6 +57,26 @@ create table search_last_word {
 
 
 
+// -------------------------content----------home----------------
+
+
+create table home_swiper
+(
+	SWIPER_ID	int(11) NOT NULL auto_increment,
+	STORE_ID 	int(11) NOT NULL,
+	SWIPER_IMG 	varchar(128) NOT NULL,
+	SWIPER_PRIO	int not null,
+	CREATED     timestamp not null default CURRENT_TIMESTAMP,
+	primary key (SWIPER_ID)
+);
+
+
+
+
+
+
+
+
 
 
 
