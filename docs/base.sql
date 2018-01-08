@@ -38,6 +38,13 @@ create table search_hot_word
 );
 
 
+/* 存在更新，不存在插入, 超过10就删除,?异步处理 */
+create table search_last_word {
+	OPENID		varchar(32) NOT NULL,
+	LAST_WORD	varchar(32) NOT NULL,
+	CREATED  	timestamp not null default CURRENT_TIMESTAMP,
+	primary key (OPENID, LAST_WORD)
+}
 
 
 
