@@ -266,7 +266,7 @@ create table order_item
 
 
 
-
+/* 删除暂时不使用，使用时改名，并改生成方式 */
 create table repo_map_cat
 (
    REPO_ID			int not null,
