@@ -70,6 +70,24 @@ create table home_swiper
 	primary key (SWIPER_ID)
 );
 
+create table home_level
+(
+	LEVEL_ID 	int(11) NOT NULL auto_increment,
+	STORE_ID 	int(11) NOT NULL,
+	LEVEL_NAME	varchar(32) NOT NULL,
+	LEVEL_PRIO 	int not null,
+	CREATED     timestamp not null default CURRENT_TIMESTAMP,
+	primary key (LEVEL_ID)
+);
+
+create table home_level_product
+(
+	LEVEL_ID 	int(11) NOT NULL,
+	PROD_ID 	int(11) NOT NULL,
+	PROD_PRIO 	int not null,
+	CREATED     timestamp not null default CURRENT_TIMESTAMP,
+	primary key (LEVEL_ID, PROD_ID)
+);
 
 
 
