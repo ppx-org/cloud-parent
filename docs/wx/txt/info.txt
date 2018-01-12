@@ -9,3 +9,17 @@ AppSecret:5a3e84b9d19c79d75db597583e3a74d5
 
 
 request合法域名	https://70358350.qcloud.la
+
+ 
+// 二维码 B
+https://mp.weixin.qq.com/debug/wxadoc/dev/api/qrcode.html
+
+token
+https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxe2d27ee638a5cb7a&secret=5a3e84b9d19c79d75db597583e3a74d5
+
+
+5_bGeQqk1GBdis5LIBKK3xDQMIzeV_ZprxQY9zCC7Qt6gaKNF2MMZSRClcPX_RwcgN47TemxTuQ7gEKNwHNUhpey80Xs9JXxWSiD3Cgs4PowaoPWy3uH0ct7rhfgG_LIhbSmlxlyTNuWYO6WbHPNEdAEAECT
+
+
+{"scene":123,"path":"pages/index/index"}
+https://api.weixin.qq.com/wxa/getwxacodeunlimit?access_token=5_YR155d1MxyAc7zz1s2p5uaTdXbNSQWQ41mn5Mmg1qjaG6R14hrwqau95IT-owK70rOV5vUxTZf2qXyJ4RNVZM33fHz9m1MeOn9i57Xt2AwNYJEooOqcCITGpqhw8vIevt201DVdUwAg-a6urTGBeAGAGTO
