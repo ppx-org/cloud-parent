@@ -39,12 +39,13 @@ create table search_hot_word
 
 
 /* 存在更新，不存在插入, 超过10就删除,?异步处理 */
-create table search_last_word {
+create table search_last_word
+(
 	OPENID		varchar(32) NOT NULL,
 	LAST_WORD	varchar(32) NOT NULL,
 	CREATED  	timestamp not null default CURRENT_TIMESTAMP,
 	primary key (OPENID, LAST_WORD)
-}
+);
 
 
 
@@ -70,6 +71,24 @@ create table home_swiper
 	primary key (SWIPER_ID)
 );
 
+create table home_level
+(
+	LEVEL_ID 	int(11) NOT NULL auto_increment,
+	STORE_ID 	int(11) NOT NULL,
+	LEVEL_NAME	varchar(32) NOT NULL,
+	LEVEL_PRIO 	int not null,
+	CREATED     timestamp not null default CURRENT_TIMESTAMP,
+	primary key (LEVEL_ID)
+);
+
+create table home_level_product
+(
+	LEVEL_ID 	int(11) NOT NULL,
+	PROD_ID 	int(11) NOT NULL,
+	PROD_PRIO 	int not null,
+	CREATED     timestamp not null default CURRENT_TIMESTAMP,
+	primary key (LEVEL_ID, PROD_ID)
+);
 
 
 
