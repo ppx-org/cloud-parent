@@ -83,6 +83,8 @@ create table category
    CAT_PRIO             int not null,
    CREATED              timestamp not null default CURRENT_TIMESTAMP,
    RECORD_STATUS        smallint not null default 1,
+   CAT_IMG_X			smallint not null default 0,
+   CAT_IMG_Y			smallint not null default 0,
    primary key (CAT_ID)
 );
 
