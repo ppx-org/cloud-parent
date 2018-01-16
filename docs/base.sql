@@ -58,7 +58,7 @@ create table search_last_word
 
 
 
-// -------------------------content----------home----------------
+/* -------------------------content----------home---------------- */
 
 
 create table home_swiper
