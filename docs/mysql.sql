@@ -266,6 +266,62 @@ create table order_item
 
 
 
+create table user_cart 
+(
+	OPENID		varchar(32) NOT NULL,
+	SKU_ID		int not null,
+	SKU_NUM		int not null,
+	STORE_ID	int not null,
+	CREATED 	timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	primary key (OPENID, SKU_ID)
+);
+
+
+create table user_favorite
+(
+	OPENID		varchar(32) NOT NULL,
+	PROD_ID		int not null,
+	STORE_ID	int not null,
+	CREATED 	timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	primary key (OPENID, PROD_ID)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* 删除暂时不使用，使用时改名，并改生成方式 */
