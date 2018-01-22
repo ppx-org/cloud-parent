@@ -199,6 +199,7 @@ create table sku
    SKU_PRIO             int not null,
    PRICE                decimal(7,2) not null,
    SKU_NAME				varchar(32),
+   SKU_IMG_SRC          varchar(128),
    primary key (SKU_ID)
 );
 
@@ -214,13 +215,13 @@ create table product
    primary key (PROD_ID)
 );
 
-create table sku_img
+create table product_img
 (
-   SKU_IMG_ID           int not null auto_increment,
-   SKU_ID               int not null,
-   SKU_IMG_PRIO         int not null,
-   SKU_IMG_SRC          varchar(128) not null,
-   primary key (SKU_IMG_ID)
+   PROD_IMG_ID           int not null auto_increment,
+   PROD_ID               int not null,
+   PROD_IMG_PRIO         int not null,
+   PROD_IMG_SRC          varchar(128) not null,
+   primary key (PROD_IMG_ID)
 );
 
 
@@ -324,7 +325,7 @@ create table user_favorite
 
 
 
-/* 删除暂时不使用，使用时改名，并改生成方式 */
+/* 删除暂时不使用，使用时改名，并改生成方式 ，去搜索引擎找 */
 create table repo_map_cat
 (
    REPO_ID			int not null,
