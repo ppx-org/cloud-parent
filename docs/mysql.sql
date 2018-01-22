@@ -137,6 +137,8 @@ create table brand
    BRAND_PRIO           int not null,
    CREATED              timestamp not null default CURRENT_TIMESTAMP,
    RECORD_STATUS        smallint not null default 1,
+   BRAND_IMG_X			smallint not null default 0,
+   BRAND_IMG_Y			smallint not null default 0,
    primary key (BRAND_ID)
 );
 
@@ -152,6 +154,8 @@ create table theme
    THEME_PRIO         int not null,
    CREATED            timestamp not null default CURRENT_TIMESTAMP,
    RECORD_STATUS      smallint not null default 1,
+   THEME_IMG_X		  smallint not null default 0,
+   THEME_IMG_Y	      smallint not null default 0,
    primary key (THEME_ID)
 );
 
@@ -214,6 +218,15 @@ create table product
    CREATED 				timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    primary key (PROD_ID)
 );
+
+create table product_detail
+(
+	PROD_ID 	int not null,
+	PROD_DESC	varchar(128) not null,
+	PROD_ARGS	varchar(128),
+	primary key (PROD_ID)
+);
+
 
 create table product_img
 (
