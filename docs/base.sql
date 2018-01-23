@@ -1,5 +1,42 @@
 
 /******************* search ****************/
+create table search_normal_v1
+(
+	PROD_ID  	int(11) NOT NULL,	
+	INDEX_ID 	int(11) NOT NULL,
+	MERCHANT_ID int(11) NOT NULL,
+	WORDS 		varchar(256) NOT NULL,
+	primary key (PROD_ID)
+);
+
+create table search_normal_v2
+(
+	PROD_ID  	int(11) NOT NULL,	
+	INDEX_ID 	int(11) NOT NULL,
+	MERCHANT_ID int(11) NOT NULL,
+	WORDS 		varchar(256) NOT NULL,
+	primary key (PROD_ID)
+);
+
+create table search_new_v1
+(
+	PROD_ID  	int(11) NOT NULL,	
+	INDEX_ID 	int(11) NOT NULL,
+	MERCHANT_ID int(11) NOT NULL,
+	WORDS 		varchar(256) NOT NULL,
+	primary key (PROD_ID)
+);
+
+create table search_new_v2
+(
+	PROD_ID  	int(11) NOT NULL,	
+	INDEX_ID 	int(11) NOT NULL,
+	MERCHANT_ID int(11) NOT NULL,
+	WORDS 		varchar(256) NOT NULL,
+	primary key (PROD_ID)
+);
+
+
 create table search_ext_word
 (
 	MERCHANT_ID int(11) NOT NULL,
@@ -46,6 +83,38 @@ create table search_last_word
 	CREATED  	timestamp not null default CURRENT_TIMESTAMP,
 	primary key (OPENID, LAST_WORD)
 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
