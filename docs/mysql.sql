@@ -212,9 +212,11 @@ create table product
    PROD_ID              int not null,
    MERCHANT_ID          int not null,
    CAT_ID               int not null,
+   BRAND_ID             int,
    REPO_ID              int not null,
    PROD_TITLE           varchar(32) int not null,
    PROD_SKU_DESC		varchar(32),
+   PROD_PRIO			int not null default 1000,
    RECORD_STATUS 		tinyint(1) NOT NULL DEFAULT 1,
    CREATED 				timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    primary key (PROD_ID)
