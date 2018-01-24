@@ -251,7 +251,7 @@ create table product_img
 create table user_order
 (
    ORDER_ID             int not null,
-   USER_ID              int not null,
+   OPENID				varchar(32) NOT NULL,
    STORE_ID             int,
    ORDER_TIME           timestamp not null,
    ORDER_STATUS         smallint not null,
