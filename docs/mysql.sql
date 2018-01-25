@@ -250,9 +250,9 @@ create table product_img
 /*==============================================================*/
 create table user_order
 (
-   ORDER_ID             int not null,
+   ORDER_ID             int not null auto_increment,
    OPENID				varchar(32) NOT NULL,
-   STORE_ID             int,
+   STORE_ID             int not null,
    ORDER_TIME           timestamp not null,
    ORDER_STATUS         smallint not null,
    ORDER_PRICE          decimal(7,2) not null,
