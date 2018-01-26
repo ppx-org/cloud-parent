@@ -199,7 +199,7 @@ create table sku
 (
    SKU_ID               int not null auto_increment,
    PROD_ID              int not null,
-   STOCK_NUM            numeric(3,0) not null,
+   STOCK_NUM            int not null not null,
    SKU_PRIO             int not null,
    PRICE                decimal(7,2) not null,
    SKU_NAME				varchar(32),
