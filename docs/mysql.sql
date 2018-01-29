@@ -216,20 +216,21 @@ create table product
    REPO_ID              int not null,
    PROD_TITLE           varchar(32) int not null,
    PROD_SKU_DESC		varchar(32),
-   PROD_PRIO			int not null default 1000,
-   RECORD_STATUS 		tinyint(1) NOT NULL DEFAULT 1,
-   CREATED 				timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   PROD_PRIO			int not null default 10000,
+   PROD_STATUS 			tinyint(1) NOT NULL DEFAULT 1,   
    primary key (PROD_ID)
 );
 
 create table product_detail
 (
-	PROD_ID 	int not null,
-	PROD_DESC	varchar(128) not null,
-	PROD_ARGS	varchar(128),
+	PROD_ID 		int not null,
+	CREATED 		timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PROD_POSITION	varchar(32),
+	BAR_CODE		varchar(32),
+	PROD_DESC		varchar(128),
+	PROD_ARGS		varchar(128),
 	primary key (PROD_ID)
 );
-
 
 create table product_img
 (
