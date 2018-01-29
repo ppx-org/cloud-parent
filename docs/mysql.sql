@@ -215,7 +215,7 @@ create table product
    BRAND_ID             int,
    REPO_ID              int not null,
    PROD_TITLE           varchar(32) int not null,
-   PROD_SKU_DESC		varchar(32),
+   SKU_DESC				varchar(32),
    PROD_PRIO			int not null default 10000,
    PROD_STATUS 			tinyint(1) NOT NULL DEFAULT 1,   
    primary key (PROD_ID)
