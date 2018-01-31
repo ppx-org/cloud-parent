@@ -17,6 +17,7 @@ create table img
 (
 	MERCHANT_ID int(11) NOT NULL,
 	IMG_TYPE 	varchar(32) NOT NULL,
+	IMG_PRIO	int(11) NOT NULL,
 	IMG_URL		varchar(256),
 	primary key (MERCHANT_ID, IMG_TYPE)
 );
