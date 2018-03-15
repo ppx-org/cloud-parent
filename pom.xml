@@ -98,10 +98,16 @@
 		</dependency>
 		
 		<!-- ehcache 缓存 -->
-      <dependency>
-          <groupId>net.sf.ehcache</groupId>
-          <artifactId>ehcache</artifactId>
-      </dependency>
+	    <dependency>
+	         <groupId>net.sf.ehcache</groupId>
+	         <artifactId>ehcache</artifactId>
+	    </dependency>
+      
+      	<!-- redis 缓存 -->
+      	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
 
 	</dependencies>
 
