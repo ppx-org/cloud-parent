@@ -2,3 +2,34 @@
 
 openid是公众号的普通用户的一个唯一的标识，只针对当前的公众号有效
 只要获得OpenID，就可以相继获得用户的一些信息，如：所在城市、省份、国家、姓别等
+
+
+wx.getSystemInfo({
+  success: function(res) {
+    console.log(res.model)
+    console.log(res.pixelRatio)
+    console.log(res.windowWidth)
+    console.log(res.windowHeight)
+    console.log(res.language)
+    console.log(res.version)
+  }
+})
+
+model手机型号 pixelRatio设备像素比
+windowWidth 窗口宽度 windowHeight容器高度
+language微信设置的语言 version微信版本号
+
+
+
+在微信内置浏览器中，如果设置user-scalable=no，会导致initial-scale,minimum-scale,maximum-scale失效
+
+注：需设置meta缩放比1:1
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+
+vw：viewpoint width，视窗宽度，1vw等于视窗宽度的1%。
+vh：viewpoint height，视窗高度，1vh等于视窗高度的1%。
+vmin：vw和vh中较小的那个。
+vmax：vw和vh中较大的那个。
+
+var w = document.documentElement.clientWidth;
+var h = document.documentElement.clientHeight;

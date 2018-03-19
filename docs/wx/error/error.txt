@@ -1,2 +1,0 @@
-﻿# 小程序都报wxss编译错误
-解决方法：在控制台输入openVendor() ，清除里面的wcsc wcsc.exe 然后重启工具
